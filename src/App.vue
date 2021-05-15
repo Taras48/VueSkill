@@ -3,7 +3,7 @@
     <ul class="catalog__list">
       <li class="catalog__item" v-for="(product,index) in products" :key="index">
         <a class="catalog__pic" href="#">
-          <img src="product.image" alt="product.title">
+          <img :src="product.image" :alt="product.title">
         </a>
 
         <h3 class="catalog__title">
@@ -96,19 +96,11 @@
   import products from './data/products'
 
 export default {
-  name: 'app',
+  name: 'App',
   data(){
-    return products
+    return {
+      products
+    }
   }
 };
 </script>
-
-<style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
-</style>
