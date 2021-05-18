@@ -19,12 +19,12 @@
         <ul class="colors colors--black">
           <li class="colors__item">
             <label class="colors__label">
-              <input class="colors__radio sr-only" type="radio" name="color-1" value="#73B6EA" checked="">
+              <input class="colors__radio sr-only" type="radio" name="color-1"
+                     value="#73B6EA" checked="">
               <span class="colors__value" style="background-color: #73B6EA;">
                   </span>
             </label>
-          </li>
-          <li class="colors__item">
+
             <label class="colors__label">
               <input class="colors__radio sr-only" type="radio" name="color-1" value="#8BE000">
               <span class="colors__value" style="background-color: #8BE000;">
@@ -45,7 +45,8 @@
 
     <ul class="catalog__pagination pagination">
       <li class="pagination__item">
-        <a class="pagination__link pagination__link--arrow pagination__link--disabled" aria-label="Предыдущая страница">
+        <a class="pagination__link pagination__link--arrow pagination__link--disabled"
+           aria-label="Предыдущая страница">
           <svg width="8" height="14" fill="currentColor">
             <use xlink:href="#icon-arrow-left"></use>
           </svg>
@@ -82,7 +83,8 @@
         </a>
       </li>
       <li class="pagination__item">
-        <a class="pagination__link pagination__link--arrow" href="#" aria-label="Следующая страница">
+        <a class="pagination__link pagination__link--arrow" href="#"
+           aria-label="Следующая страница">
           <svg width="8" height="14" fill="currentColor">
             <use xlink:href="#icon-arrow-right"></use>
           </svg>
@@ -93,14 +95,14 @@
 </template>
 
 <script>
-  import products from './data/products'
+  import products from './data/products';
 
-export default {
-  name: 'App',
-  data(){
-    return {
-      products
+  export default {
+    name: 'App',
+    data() {
+      return {
+        products
+      };
     }
-  }
-};
+  };
 </script>
